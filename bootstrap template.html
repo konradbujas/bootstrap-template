@@ -13,7 +13,7 @@
       crossorigin="anonymous"
     />
 
-    <title>Bootstrap theme</title>
+    <title>Bootstrap template</title>
 
     <style>
       /* [class*="co"] {
@@ -27,11 +27,11 @@
         border: none;
       }
       .footer {
-        background: #6e7585;
+        background: #4c5058;
       }
       .image {
         min-height: 200px;
-        /* width: 100px; */
+        min-width: 200px;
         background: #dfe1e1;
         margin-bottom: 12px;
       }
@@ -44,20 +44,58 @@
         /* margin: 8px 5px;
             padding: 16px; */
       }
+      .links {
+        text-decoration: none;
+        color: #fff;
+      }
+      .nav-link {
+        color: #fff;
+      }
+
+      .nav-pills .nav-link.active {
+        background-color: #c0c5ce;
+        
+      }
+
+      .logo {
+        min-width: 100%;
+        min-height: 10%;
+      }
+
+      
+     
     </style>
   </head>
   <body>
     <div class="container">
       <div class="row">
-        <div class="col-md-12 mt-2 p-1 navigation">
+        <div class="col d-block mt-2 p-1 navigation">
           <div class="row">
-            <div class="col-6 d-flex flex-wrap justify-content-center">nav</div>
-            <div class="col-6 d-flex flex-wrap justify-content-end px-2">cart(1)</div>
+
+
+            <div class="col-md-1 col-sm-5 d-none d-md-block d-block justify-content-end px-5">
+              <button type="button" class=" btn btn-secondary mx-1">Logo</button>
+            </div>
+
+
+            <div class="col-md-6 col-sm-6 d-flex flex-wrap justify-content-center">
+              
+              <ul class="nav nav-pills">
+                <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Start</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
+              </ul>
+            </div>
+            <div class="col d-flex flex-wrap justify-content-end px-5">
+              
+              <button type="button" class="btn btn-dark mx-1">Cart (1)</button>
+            </div>
           </div>
         </div>
 
         <div class="row mx-2">
-          <div class="col d-none d-md-block sidebar mt-3">sidebar</div>
+          <div class="col d-none d-md-block sidebar mt-3"></div>
           <div class="col-md-10 mt-3 p-3">
             <div class="row">
               <h2>Title 1</h2>
@@ -103,10 +141,46 @@
                 </div> -->
             <div class="col-md-12 mt-3 p-3 links">
               <div class="row">
-                <div class="col-2">LOGO</div>
-                <div class="col-4">links</div>
-                <div class="col-6">socials</div>
+                <div class="col-md-2">
+                  <button type="button" class="d-none d-md-block btn btn-secondary logo"></button>
+                </div>
+                <div class="col-md-2 col-6  links">
+                  
+
+                  <ul class="nav nav-pills d-block mb-3">
+                    <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Contact Us</a></li>
+                  </ul>
+                </div>
+
+                <div class="col-md-2 col-6">
+                  
+                  <ul class="nav nav-pills d-block">
+                    <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Search</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">T & Cs</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Privacy</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Community</a></li>
+                  </ul>
+
+                  
+                </div>
+                <div class="col d-flex flex-wrap justify-content-center align-content-center">
+                  <h6>Get our newsletter</h6>
+                  <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Enter your email" aria-label="Enter your email" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                      <button class="btn btn-outline-light" type="button">Subscribe</button>
+                    </div>
+                  </div>
+                
+                </div>
               </div>
+
+              
             </div>
           </div>
         </div>
