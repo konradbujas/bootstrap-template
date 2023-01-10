@@ -1,0 +1,66 @@
+.card {
+    border: none;
+  }
+
+  .circle {
+    background: #e4dfdf;
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    margin: 3px;
+    display: flex;
+    justify-content: space-around;
+    align-content: space-around;
+  }
+
+  .footer {
+    background: #4c5058;
+  }
+
+  .image {
+    min-height: 200px;
+    background: #dfe1e1;
+    margin-bottom: 16px;
+  }
+
+  .logo {
+    min-width: 100%;
+    min-height: 10%;
+  }
+
+  .nav-link {
+    color: #fff;
+  }
+
+  .nav-link--header {
+    color: #333;
+  }
+
+  .nav-pills .nav-link.active {
+    background-color: #c0c5ce;
+    color: #333;
+  }
+
+  .navigation {
+    background: #d2daef;
+    height: 50px;
+    color: #333;
+  }
+
+  .navigation-links {
+    color: #333;
+  }
+
+  .sidebar {
+    background: #d4dae7;
+  }
+
+  .socials {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .text {
+    color: #fff;
+  }
+</style>
